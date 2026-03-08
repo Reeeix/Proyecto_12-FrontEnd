@@ -6,8 +6,8 @@ Aplicacion **full stack** para explorar peliculas, gestionar una watchlist perso
 
 Este proyecto se divide en:
 
-- **Frontend** (este repo): React + Vite
-- **Backend** (repo separado): Node.js + Express + MongoDB
+- **Frontend** (este rep): React + Vite
+- **Backend** (rep separado): Node.js + Express + MongoDB
 
 Flujo general:
 
@@ -19,13 +19,13 @@ Flujo general:
 - 🏠 Redireccion a Home tras login/registro correcto
 - 🎞️ Catalogo de peliculas con filtros por titulo y genero
 - 📄 Detalle de pelicula con reviews
-- ⭐ Review con rating en estrellas (1-10) y comentario (max 100)
+- ⭐ Review con rating en estrellas (1-10) y comentario de un máximo de 100 carácteres
 - 🗑️ Eliminar review propia
 - 📌 Watchlist desde el detalle de pelicula
 - 👤 Perfil con avatar, reviews y watchlist integrada
 - 📱 UI responsive
 
-## 🛠️ Stack tecnico
+## 🛠️ Tecnologías utilizadas
 
 ### Frontend
 
@@ -78,7 +78,7 @@ Flujo general:
    └─ utils/seeds/
 ```
 
-## 🚀 Instalacion y ejecucion
+## 🚀 Instalación y ejecución
 
 ### 1) Backend
 
@@ -130,10 +130,6 @@ npm run build
 Base URL backend local:
 
 `http://localhost:3000`
-
-El frontend consume por defecto:
-
-`http://localhost:3000/api` (configurado en `src/services/api.js`)
 
 ## 🧭 Rutas frontend
 
@@ -197,8 +193,9 @@ Puedes obtener el token en:
 ## 🧠 Decisiones del proyecto
 
 - La watchlist se integra en `Profile` (no como pagina separada en navbar).
-- En `Profile`, cada review puede mostrar referencia a la pelicula.
+- En `Profile`, cada review puede mostrar referencia a la película.
 - En `Movie Detail`, esa referencia no se muestra para evitar redundancia.
+- Durante el desarrollo del proyecto evalué la posibilidad de componetizar los inputs. Finalmente, decidí no hacerlo porque el número de inputs era reducido y tenían comportamientos ligeramente distintos que, al componetizarlos, más que simplificar podría introducir una complejidad innecesaria.
 
 ## 🐞 Problemas comunes
 
@@ -212,8 +209,6 @@ Puedes obtener el token en:
 
 - Paginacion o infinite scroll
 - Tests (frontend y backend)
-- i18n real con diccionario
-- `API_URL` por variable de entorno en frontend
 
 ---
 
