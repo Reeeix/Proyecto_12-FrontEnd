@@ -1,4 +1,4 @@
-const API_URL = "http://localhost:3000/api"
+const API_URL = "https://movies-explorer-rtc.onrender.com/api"
 
 export const request = async (endpoint, method = "GET", body = null, token = null) => {
   const headers = { "Content-Type": "application/json" }
