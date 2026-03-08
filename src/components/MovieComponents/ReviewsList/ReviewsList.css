@@ -1,0 +1,13 @@
+.reviews-section {
+  margin-top: 30px;
+}
+
+.reviews-section h2 {
+  margin-bottom: 15px;
+}
+
+.reviews-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}

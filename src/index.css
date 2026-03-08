@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Sora:wght@500;700&display=swap");
+
+:root {
+	--bg-ink: #0f1720;
+	--bg-ink-soft: #1d2a36;
+	--bg-panel: #f8fbff;
+	--text-main: #11202f;
+	--text-soft: #4d6478;
+	--brand: #ff6f3c;
+	--brand-2: #009688;
+	--line: #d6e1ec;
+	--shadow-soft: 0 10px 30px rgba(11, 32, 52, 0.08);
+	--shadow-pop: 0 16px 35px rgba(0, 150, 136, 0.2);
+}
+
+* {
+	box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+	min-height: 100%;
+}
+
+body {
+	margin: 0;
+	font-family: "Space Grotesk", "Trebuchet MS", "Segoe UI", sans-serif;
+	color: var(--text-main);
+	background:
+		radial-gradient(1100px 500px at 8% -10%, rgba(0, 150, 136, 0.24), transparent 55%),
+		radial-gradient(900px 500px at 95% -8%, rgba(255, 111, 60, 0.2), transparent 52%),
+		linear-gradient(180deg, #eef4fb 0%, #f9fbff 45%, #f3f8fc 100%);
+}
+
+a {
+	color: inherit;
+}
+
+h1,
+h2,
+h3 {
+	font-family: "Sora", "Space Grotesk", sans-serif;
+	letter-spacing: -0.02em;
+	margin-top: 0;
+}
+
+p {
+	color: var(--text-soft);
+}
+
+.home-page,
+.movies-page,
+.movie-detail-page,
+.user-profile-page,
+.login-page,
+.register-page {
+	width: min(1140px, 92%);
+	margin: 1.25rem auto 2rem;
+}
+
+button {
+	font: inherit;
+}
+
+input,
+textarea,
+select {
+	font: inherit;
+}
+
+@media (max-width: 700px) {
+	.home-page,
+	.movies-page,
+	.movie-detail-page,
+	.user-profile-page,
+	.login-page,
+	.register-page {
+		width: min(96%, 1140px);
+		margin-top: 1rem;
+	}
+}

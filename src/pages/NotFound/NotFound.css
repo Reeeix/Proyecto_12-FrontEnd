@@ -1,0 +1,15 @@
+.notfound-page {
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.notfound-page h1 {
+  font-size: 80px;
+  margin-bottom: 10px;
+}
+
+.notfound-page button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  cursor: pointer;
+}

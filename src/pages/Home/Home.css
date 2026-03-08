@@ -1,0 +1,9 @@
+.home-page {
+	padding: 0.6rem 0 1.2rem;
+}
+
+.home-page h1 {
+	margin-bottom: 1.1rem;
+	font-size: clamp(1.4rem, 2vw, 2rem);
+	color: #10253a;
+}
