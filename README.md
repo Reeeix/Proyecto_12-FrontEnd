@@ -2,6 +2,11 @@
 
 Aplicacion **full stack** para explorar peliculas, gestionar una watchlist personal y crear/eliminar reviews.
 
+## Live Demo
+
+Frontend → https://moviexplorer-six.vercel.app/
+Backend → https://movies-explorer-rtc.onrender.com
+
 ## 🧩 Arquitectura
 
 Este proyecto se divide en:
